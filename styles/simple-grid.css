@@ -1,0 +1,87 @@
+body {
+  font-family: 'Forum', cursive;
+  background-color: #efc2b5;
+  margin-top: 1.5rem; 
+  margin-bottom: 1.5rem; 
+  margin-left: 16rem; 
+  margin-right: 16rem;
+  padding-block: 10px
+}
+nav {
+  list-style-type: none;
+  margin: 1;
+  padding: 2;
+  display: block;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.navLink{
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+p.solid {
+  border-left-style: solid;
+  border-color: #d1b5ef;
+  margin: 1;
+  padding: 2;
+}
+img {
+  width: 30%;
+  border-color: #d1b5ef;
+  float: left;
+  margin-right: 1rem
+}
+header {
+  background-color: #d1b5ef;
+  text-align: center;
+  color: white;
+}
+ .firstGraph::first-letter {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-right: 0.5rem;
+  float: left;
+}
+ .secondGraph::first-letter {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-left: 0.5rem;
+  float: left;
+}
+ .floatLeft {
+  float: left;
+  width: 100%;
+}
+.floatRight {
+  float: right;
+  width: 30%;
+  margin: 1rem 3rem 2rem 3;
+  padding: 0.2rem 1rem 0 1rem;
+}
+h1 {
+  color: black;
+  font-family: Shrikhand, sans-serif; 
+  font-size: 30px;
+  text-align: left;
+  padding: 12px;
+}
+h2 {
+  color: white;
+  text-align: right;
+  font-family: Shrikhand, sans-serif; 
+  border-bottom-style: solid;
+  border-color: white;
+}
+h3 {color: black;
+  font-family: Shrikhand, sans-serif; 
+  text-align: center;
+}
