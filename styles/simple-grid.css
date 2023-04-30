@@ -8,14 +8,32 @@ body {
   padding-block: 10px
 }
 nav {
-  list-style-type: none;
-  margin: 1;
-  padding: 2;
-  display: block;
-  padding: 12px;
-  background-color: black;
-  color: white;
-  text-align: center;
+  background-color: #efc2b5;
+  height: 50px;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 10px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  transition: text-decoration 0.3s ease;
+}
+a:hover {
+  text-decoration: underline;
 }
 .navLink{
   padding: 0;
@@ -39,15 +57,24 @@ img {
   margin-right: 1rem
 }
 header {
-  background-color: #d1b5ef;
   text-align: center;
   color: white;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+h1 .subtitle {
+  font-family: 'Forum', cursive;
+  font-size: 18px;
+  font-style: italic;
+  color: black;
+  line-height:.5rem;
 }
  .firstGraph::first-letter {
   color: white;
   font-size: 3rem;
   font-weight: 700;
   padding-right: 0.5rem;
+  padding-left: 1rem;
   float: left;
 }
  .secondGraph::first-letter {
