@@ -56,6 +56,19 @@ img {
   float: left;
   margin-right: 1rem
 }
+.circle-crop {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.circle-crop img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
 header {
   text-align: center;
   color: white;
@@ -68,6 +81,15 @@ h1 .subtitle {
   font-style: italic;
   color: black;
   line-height:.5rem;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin-right: 10px;
 }
  .firstGraph::first-letter {
   color: white;
