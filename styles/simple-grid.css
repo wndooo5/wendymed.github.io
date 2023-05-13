@@ -25,7 +25,7 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #fff;
+  color: #d68c77;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -57,11 +57,12 @@ img {
   margin-right: 1rem
 }
 .circle-crop {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  align-items: right;
 }
 .circle-crop img {
   display: block;
@@ -116,6 +117,9 @@ h1 .subtitle {
   margin: 1rem 3rem 2rem 3;
   padding: 0.2rem 1rem 0 1rem;
 }
+.gallery {
+  align: center;
+}
 h1 {
   color: black;
   font-family: Shrikhand, sans-serif; 
@@ -124,13 +128,70 @@ h1 {
   padding: 12px;
 }
 h2 {
-  color: white;
+  color: #483257;
   text-align: right;
   font-family: Shrikhand, sans-serif; 
   border-bottom-style: solid;
-  border-color: white;
+  border-color: #483257;
 }
 h3 {color: black;
   font-family: Shrikhand, sans-serif; 
   text-align: center;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-controls button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-controls button.active {
+  background-color: #000;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
